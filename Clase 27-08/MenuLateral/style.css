@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    flex-direction: row;/*Por defecto es row*/  
+    height: 100%;
+}
+
+body{
+    height: 100vh;
+}
+
+.menulat{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width:15%;
+    border-radius: 10px;
+    background-color: #282c28;
+    color: white;
+}
+
+.pag{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex: 1; /*Hace que el elemento ocupe todo el espacio restante cuanto mas grande el numero da mayor importancia*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu{
+    padding-left: 20px;
+    font-size: 50px;
+}
+
+.item{
+    font-size: 20px;
+}

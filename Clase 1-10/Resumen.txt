@@ -1,0 +1,23 @@
+Instalamos nodejs
+Instalamos express mediante terminal con express generator (npm install express-generator -g)
+
+Buscar que es api rest
+que es un end point
+que es postman
+	
+
+midleware
+se usan para por ejemplo verificar si esta viva una sesión o por ejemplo para una búsqueda por id verificar que el id sea un dato numerico.
+Se pueden usar cuantos necesite, y se eejecutan en el orden que se lo ponga
+
+req: request. Todo lo que llegue de request (payload, querystring) se puede obviar con _ en caso de no ser utilizado
+res: response. Se utiliza para retornar info al usuario
+next: Se usa para pasar al siguiente
+
+Las capas de rutas reciben solicitudes, validan solicitudes y devuelven info
+Las capas de servicio se encarga de la lógica del negocio
+
+
+
+
+ctrl + c detengo el servidor

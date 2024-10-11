@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clickMe(){
+            var name = document.getElementById("name").value;
+
+            if(name.value){
+                alert(name.value);
+            }
+            else{
+                alert('Elemento no encontrado');
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Hay 3 formas para ejecutar js, primero con la etiqueta "script" en el head, segunda al final del body y por ultimo en un archivo externo -->
+
+    <form action="">
+        <input id="name" type="text" placeholder="Nombre">
+        <button type="button" onclick="clickMe()">Click me!</button>
+
+    </form>
+    
+</body>
+</html>

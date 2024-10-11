@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="register.js"></script>
+    <script src="localStorageHelper.js"></script>
+</head>
+<body>
+    <div class="navigation">
+        <h3>Trabajo Practico 1</h3>
+        <p class="item"><a href="overview.html">Página Principal</a></p>
+        <p class="item" id="itemSelected"><a href="student.html">Alumnos</a></p>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h2 id="title">Alumnos</h2>
+            <button id="back"><a style="color: white" href="student.html">Atras</a></button>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="parent">
+            <div class="div1"> 
+                <p> Nombre:</p> 
+            </div>
+            <div class="div2"> 
+                <input id="inputName" type="text" name="name" required> 
+            </div>
+            <div class="div3">
+                <p> Apellido:</p> 
+            </div>
+            <div class="div4"> 
+                <input id="inputLastname" type="text" name="lastname" required>
+            </div>
+            <button id="addForm" onclick="recordStudents()"><a style="color: white;" href="formStudent.html">Agregar</a></button>
+        </div>
+    </div>
+</body>
+</html>

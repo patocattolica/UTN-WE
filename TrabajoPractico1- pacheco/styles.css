@@ -1,0 +1,182 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Menú lateral */
+.sidebar {
+    width: 200px;
+    background-color: darkturquoise;
+    padding-left: 20px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    font-weight: 700;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: paleturquoise;
+}
+
+.sidebar ul li a.selected {
+    background-color: white;
+    color: darkturquoise;
+}
+
+/* Contenido principal */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+#content-Formulario{
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.75);
+    padding: 0 20px;
+}
+
+header h2 {
+    margin: 0;
+}
+
+/* Botones */
+.add-btn, .back-btn, .submit-btn {
+    background-color: darkturquoise;
+    color: white;
+    padding: 7px;
+    border: none;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.back-btn {
+    background-color: red;
+}
+
+/* Card */
+.card {
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.75);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tabla */
+.alumno-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.alumno-table th, .alumno-table td {
+    border: 1px solid lightgray;
+    padding: 10px;
+    text-align: left;
+}
+
+.alumno-table th {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/* Buscador */
+.search-container {
+    margin-top: 10px;
+}
+
+.search-container input {
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.search-container button {
+    padding: 8px;
+    background-color: darkturquoise;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Paginación */
+.pagination {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pagination select, .pagination button {
+    margin-left: 5px;
+}
+.pagination-btn {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: rgb(255, 255, 255);
+    border:rgb(0, 255, 85);
+    cursor: pointer;
+}
+
+.pagination-btn.active {
+    background-color: rgb(0, 255, 85);
+    font-weight: bold;
+}
+/* Formulario */
+.form-alumno {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.form-alumno label {
+    margin: 10px 0 5px;
+}
+
+.form-alumno input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    padding: 10px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.75);
+}
+

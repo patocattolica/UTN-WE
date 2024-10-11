@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumnos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="getInfoFromStorage.js"></script>
+    <script src="getSelectedItemsPerPage.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <h1>Trabajo Practico 1</h1>
+                <li><a href="PaginaPrincipal.html">Pagina Principal</a></li>
+                <li><a href="#" class="selected">Alumnos</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <header>
+                <h2>Alumnos</h2>
+                <a href="AgregarAlumnos.html" class="add-btn">Agregar</a>
+                
+            </header>
+
+            <table class="alumno-table">
+                <thead>
+                    <tr>
+                        <th>Legajo</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+            <div class="pagination">
+                <p>Items por pagina</p>
+                <select>
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                </select>
+                <div id="pagination"></div>
+            </div>
+            <script src="showStudents.js"></script>
+        </div>
+    </div>
+</body>
+</html>

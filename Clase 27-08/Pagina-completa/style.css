@@ -1,0 +1,12 @@
+/* Vamos a usar display:flex al usar esto nos permite usar flex-direction, justyfy elements, aling, etc */
+html.body
+
+.full-page{
+    display: flex; /**/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #282c34;
+    color: white;
+}

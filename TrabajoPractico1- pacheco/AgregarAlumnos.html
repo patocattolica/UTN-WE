@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta de Alumno</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="getInfoFromStorage.js"></script>
+    <script src="addInfo.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <h1>Trabajo Practico 1</h1>
+                <li><a href="PaginaPrincipal.html">Pagina Principal</a></li>
+                <li><a href="#" class="selected">Alumnos</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <header>
+                <h2>Agregar Alumnos</h2>
+                <a href="MostrarAlumnos.html" class="add-btn back-btn">Atras</a>
+            </header>
+
+            <form onsubmit="addInfo(event)" class="form-alumno">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="name" name="nombre" required placeholder="Ingrese Nombre">
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="lastName" name="apellido" required placeholder="Ingrese Apellido">
+                
+                <button type="submit" class="submit-btn">Agregar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

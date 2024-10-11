@@ -1,0 +1,17 @@
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(autofill,minmax(200,1fr));
+    grid-gap: 30px;
+    padding: 10px;
+}
+
+.card{
+    width: 300px;
+    border: 2px solid black;
+    padding: 20px;
+
+}
+
+.card :hover{
+    box-shadow: 
+}
